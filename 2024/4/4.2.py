@@ -1,0 +1,1 @@
+print(sum([all(0 <= n < len(grid) for n in (y+1, y-1)) and all(0 <= n < len(grid[0]) for n in (x+1, x-1)) and all("".join(grid[y+i][x+s*i] for i in (-1,0,1)) in ("MAS", "SAM") for s in (-1,1)) for grid in ([l.strip() for l in open(0).readlines()],) for y in range(len(grid)) for x in range(len(grid[0]))]))
