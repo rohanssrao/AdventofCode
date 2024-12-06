@@ -1,0 +1,1 @@
+print(sum(int(pages[len(pages)//2]) if all(a not in pages or b not in pages or pages.index(a) < pages.index(b) for a,b in rules) else 0 for rules, updates in ([list(map(lambda line: __import__("re").split(r"\||,", line), filter(lambda line: line, section.split("\n")))) for section in open(0).read().split("\n\n")],) for pages in updates))
