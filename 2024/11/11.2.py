@@ -1,0 +1,1 @@
+(rec := __import__("functools").cache(lambda n, i: 1 if i == 0 else rec(1, i-1) if n == 0 else rec(int(n // 10**(digits/2)), i-1) + rec(int(n % 10**(digits/2)), i-1) if (digits := len(str(n))) % 2 == 0 else rec(n*2024, i-1)), print(sum(rec(n, 75) for n in list(map(int, input().split(' '))))))
