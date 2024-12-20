@@ -1,0 +1,1 @@
+print(len((rec := lambda rocks, i: rocks if i == 0 else rec([r for rs in [[1] if r == 0 else [int(str(r)[:len(str(r))//2]), int(str(r)[len(str(r))//2:])] if len(str(r)) % 2 == 0 else [r*2024] for r in rocks] for r in rs], i-1))(list(map(int, input().split(' '))), 25)))
