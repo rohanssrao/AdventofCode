@@ -1,0 +1,1 @@
+(claws := list(map(int, __import__("re").findall(r'\d+', open(0).read()))), claws := [claws[i:i+6] for i in range(0, len(claws), 6)], print(sum((a := (y_b*x - x_b*y) / (y_b*x_a - x_b*y_a), b := (x - x_a*a) / x_b, 3*int(a) + int(b) if a.is_integer() and b.is_integer() else 0)[-1] for x_a, y_a, x_b, y_b, x, y in claws)))
